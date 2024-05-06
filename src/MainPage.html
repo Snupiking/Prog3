@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="NavigationBar.css">
     <link rel="stylesheet" href="MainPageDesign.css">
     <meta charset="UTF-8">
@@ -16,6 +17,15 @@
     </div>
     <li class="right"><a href="about.asp">About</a></li>
 </ul>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+</script>
+
 
 </body>
 </html>

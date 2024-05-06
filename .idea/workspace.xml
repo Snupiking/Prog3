@@ -7,7 +7,15 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38433fbe-f13a-465e-a0c7-6efa4ba616b9" name="Changes" comment="" />
+    <list default="true" id="38433fbe-f13a-465e-a0c7-6efa4ba616b9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/images/192.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/512.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPage.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +26,8 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="package.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -43,13 +53,16 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2fdivL9mTMDQ3vdKBKRvm9htC0Y" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Cargo.Run.executor&quot;: &quot;Run&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -115,6 +128,8 @@
       <workItem from="1714861005128" duration="90000" />
       <workItem from="1714861103001" duration="89000" />
       <workItem from="1714926140679" duration="483000" />
+      <workItem from="1715022351523" duration="1962000" />
+      <workItem from="1715024431390" duration="1651000" />
     </task>
     <task id="LOCAL-00001" summary="Added Main Page">
       <option name="closed" value="true" />
@@ -139,6 +154,7 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added Main Page" />
     <MESSAGE value="Added Some Sites and Files&#10;- started Designing the Startpage Navbar" />
     <option name="LAST_COMMIT_MESSAGE" value="Added Some Sites and Files&#10;- started Designing the Startpage Navbar" />
