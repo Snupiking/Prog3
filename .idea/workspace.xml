@@ -7,10 +7,13 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38433fbe-f13a-465e-a0c7-6efa4ba616b9" name="Changes" comment="- Added some Files and Images&#10;- Made the Website to be installable as a PWA&#10;- Changed some other minor things">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/README.txt" afterDir="false" />
+    <list default="true" id="38433fbe-f13a-465e-a0c7-6efa4ba616b9" name="Changes" comment="- Added a SQL Database and created a base table&#10;- Added a README.txt file and put in some requirements">
+      <change afterPath="$PROJECT_DIR$/src/database.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/16fbecc4-4332-4c7b-919a-825e5e8d5f43.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/16fbecc4-4332-4c7b-919a-825e5e8d5f43.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DatabaseConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,7 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="package.json" />
+        <option value="Class" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -56,33 +60,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Cargo.Run.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Cargo.Run.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Node.js.database.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Cargo.Run">
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package forum_website_prog3 --bin forum_website_prog3" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -99,6 +104,9 @@
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="database.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="database.js" working-dir="$PROJECT_DIR$/src/images">
+      <method v="2" />
     </configuration>
   </component>
   <component name="RustProjectSettings">
@@ -132,7 +140,10 @@
       <workItem from="1714926140679" duration="483000" />
       <workItem from="1715022351523" duration="1962000" />
       <workItem from="1715024431390" duration="3934000" />
-      <workItem from="1715181092697" duration="4393000" />
+      <workItem from="1715181092697" duration="6189000" />
+      <workItem from="1715257823790" duration="4839000" />
+      <workItem from="1715332664451" duration="1273000" />
+      <workItem from="1715338863018" duration="4445000" />
     </task>
     <task id="LOCAL-00001" summary="Added Main Page">
       <option name="closed" value="true" />
@@ -158,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715026538268</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- Added a SQL Database and created a base table&#10;- Added a README.txt file and put in some requirements">
+      <option name="closed" value="true" />
+      <created>1715197313959</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715197313959</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +188,8 @@
     <MESSAGE value="Added Main Page" />
     <MESSAGE value="Added Some Sites and Files&#10;- started Designing the Startpage Navbar" />
     <MESSAGE value="- Added some Files and Images&#10;- Made the Website to be installable as a PWA&#10;- Changed some other minor things" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added some Files and Images&#10;- Made the Website to be installable as a PWA&#10;- Changed some other minor things" />
+    <MESSAGE value="- Added a SQL Database and created a base table&#10;- Added a README.txt file and put in some requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added a SQL Database and created a base table&#10;- Added a README.txt file and put in some requirements" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
