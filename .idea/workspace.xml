@@ -7,13 +7,12 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38433fbe-f13a-465e-a0c7-6efa4ba616b9" name="Changes" comment="- Added a SQL Database and created a base table&#10;- Added a README.txt file and put in some requirements">
-      <change afterPath="$PROJECT_DIR$/src/database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/16fbecc4-4332-4c7b-919a-825e5e8d5f43.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/16fbecc4-4332-4c7b-919a-825e5e8d5f43.xml" afterDir="false" />
+    <list default="true" id="38433fbe-f13a-465e-a0c7-6efa4ba616b9" name="Changes" comment="- Ive given up on the SQL Database&#10;- Started implementing a IndexDB Database&#10;- Some other minor tweaks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DatabaseConnection.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/192.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/512.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/512.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +142,18 @@
       <workItem from="1715181092697" duration="6189000" />
       <workItem from="1715257823790" duration="4839000" />
       <workItem from="1715332664451" duration="1273000" />
-      <workItem from="1715338863018" duration="4445000" />
+      <workItem from="1715338863018" duration="4657000" />
+      <workItem from="1715345737236" duration="6666000" />
+      <workItem from="1715353202764" duration="1783000" />
+      <workItem from="1715799725945" duration="707000" />
+      <workItem from="1715939651298" duration="262000" />
+      <workItem from="1715940004556" duration="3112000" />
+      <workItem from="1715956516185" duration="1374000" />
+      <workItem from="1715964263459" duration="642000" />
+      <workItem from="1716397862577" duration="2141000" />
+      <workItem from="1716553614585" duration="4074000" />
+      <workItem from="1716853681345" duration="22000" />
+      <workItem from="1717175786149" duration="643000" />
     </task>
     <task id="LOCAL-00001" summary="Added Main Page">
       <option name="closed" value="true" />
@@ -177,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715197313959</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- Ive given up on the SQL Database&#10;- Started implementing a IndexDB Database&#10;- Some other minor tweaks">
+      <option name="closed" value="true" />
+      <created>1715345264368</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715345264368</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +207,8 @@
     <MESSAGE value="Added Some Sites and Files&#10;- started Designing the Startpage Navbar" />
     <MESSAGE value="- Added some Files and Images&#10;- Made the Website to be installable as a PWA&#10;- Changed some other minor things" />
     <MESSAGE value="- Added a SQL Database and created a base table&#10;- Added a README.txt file and put in some requirements" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added a SQL Database and created a base table&#10;- Added a README.txt file and put in some requirements" />
+    <MESSAGE value="- Ive given up on the SQL Database&#10;- Started implementing a IndexDB Database&#10;- Some other minor tweaks" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Ive given up on the SQL Database&#10;- Started implementing a IndexDB Database&#10;- Some other minor tweaks" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
