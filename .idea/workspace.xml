@@ -7,12 +7,20 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38433fbe-f13a-465e-a0c7-6efa4ba616b9" name="Changes" comment="- Ive given up on the SQL Database&#10;- Started implementing a IndexDB Database&#10;- Some other minor tweaks">
+    <list default="true" id="38433fbe-f13a-465e-a0c7-6efa4ba616b9" name="Changes" comment="- Datenbank neu überarbeitet, damit diese soweit erstmal funktioniert.">
+      <change afterPath="$PROJECT_DIR$/src/Backup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NeuerEintrag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/neuerEintragDesign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainPageDesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPageDesign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NavigationBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/NavigationBar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/images/192.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/192.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/images/512.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/service-worker.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,11 +30,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
         <option value="package.json" />
         <option value="Class" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -77,7 +85,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;language.rust.cargo.check&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -114,8 +122,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -154,6 +162,17 @@
       <workItem from="1716553614585" duration="4074000" />
       <workItem from="1716853681345" duration="22000" />
       <workItem from="1717175786149" duration="643000" />
+      <workItem from="1717320663052" duration="791000" />
+      <workItem from="1718725946978" duration="1613000" />
+      <workItem from="1718794196251" duration="1670000" />
+      <workItem from="1718799487713" duration="9138000" />
+      <workItem from="1719404026679" duration="3152000" />
+      <workItem from="1719470735670" duration="3227000" />
+      <workItem from="1719474845638" duration="3105000" />
+      <workItem from="1719506585887" duration="72000" />
+      <workItem from="1719506800573" duration="1212000" />
+      <workItem from="1719560405722" duration="4903000" />
+      <workItem from="1719700581915" duration="73000" />
     </task>
     <task id="LOCAL-00001" summary="Added Main Page">
       <option name="closed" value="true" />
@@ -195,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715345264368</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="- Datenbank neu überarbeitet, damit diese soweit erstmal funktioniert.">
+      <option name="closed" value="true" />
+      <created>1717320797080</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717320797081</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +235,8 @@
     <MESSAGE value="- Added some Files and Images&#10;- Made the Website to be installable as a PWA&#10;- Changed some other minor things" />
     <MESSAGE value="- Added a SQL Database and created a base table&#10;- Added a README.txt file and put in some requirements" />
     <MESSAGE value="- Ive given up on the SQL Database&#10;- Started implementing a IndexDB Database&#10;- Some other minor tweaks" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Ive given up on the SQL Database&#10;- Started implementing a IndexDB Database&#10;- Some other minor tweaks" />
+    <MESSAGE value="- Datenbank neu überarbeitet, damit diese soweit erstmal funktioniert." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Datenbank neu überarbeitet, damit diese soweit erstmal funktioniert." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

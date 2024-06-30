@@ -1,4 +1,5 @@
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -27,6 +28,7 @@ body {
 }
 
 .navbar li a {
+
     display: block;
     color: white;
     margin: 0;
@@ -35,10 +37,17 @@ body {
     text-decoration: none;
     transition: background-color 0.5s ease;
 
+
 }
+
 
 .navbar li.right {
     margin-left: auto;
+    color: midnightblue;
+
+}
+.navbar li.right a {
+    color: midnightblue;
 }
 
 .navbar li a:hover {

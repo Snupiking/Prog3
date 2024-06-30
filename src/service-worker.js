@@ -2,9 +2,12 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open('my-cache').then(cache => {
             return cache.addAll([
-                '/',
-                '/icon.png'
-            ]);
+                './manifest.json',
+                './images',
+                './icon.png'
+            ]).catch(error => {
+                console.error('Failed to cache files:', error);
+            });
         })
     );
 });
@@ -16,3 +19,4 @@ self.addEventListener('fetch', event => {
         })
     );
 });
+

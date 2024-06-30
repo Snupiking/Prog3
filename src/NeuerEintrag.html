@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neuen Eintrag hinzufügen</title>
+    <link rel="stylesheet" href="NavigationBar.css">
+    <link rel="stylesheet" href="neuerEintragDesign.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="database.js"></script>
+</head>
+<body>
+
+<ul class="navbar">
+    <div class="centered-links">
+        <li><a href="MainPage.html">Home</a></li>
+        <li><a href="Backup.html">Backup</a></li>
+    </div>
+    <li class="right"><a href="NeuerEintrag.html">Neu</a></li>
+</ul>
+
+
+<div class="form-container">
+    <form id="eintrag-form">
+        <label for="frage">Frage:</label>
+        <input type="text" id="frage" name="frage">
+
+        <label for="antwort">Antwort:</label>
+        <input type="text" id="antwort" name="antwort">
+
+        <label for="kategorie">Kategorie:</label>
+        <input type="text" id="kategorie" name="kategorie">
+
+        <input type="submit" value="Absenden">
+    </form>
+</div>
+</body>
+</html>

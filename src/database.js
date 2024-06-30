@@ -40,17 +40,9 @@ request.onsuccess = function(event) {
     db = event.target.result;
     console.log("Datenbank erfolgreich geöffnet");
 
-    // Beispielaufruf zum Abrufen der Daten
     getEinträge(function(data) {
         console.log("Abgerufene Daten:", data);
-    });
-
-    // Beispielaufruf zum Hinzufügen neuer Daten
-    addEinträge({
-        Frage: "Neue Frage?",
-        Antwort: "Neue Antwort",
-        Kategorie: "Neue Kategorie",
-        Erstellungsdatum: "2024-05-17"
+        displayData(data);
     });
 };
 
@@ -92,4 +84,60 @@ function addEinträge(newData) {
         console.error("Fehler beim Hinzufügen eines neuen Eintrags:", event.target.errorCode);
     };
 }
+
+//Füge neue Daten zu der Datenbank hinzu und leere die Felder
+window.onload = function() {
+    const form = document.getElementById('eintrag-form');
+    if (form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const frage = document.getElementById('frage').value;
+            const antwort = document.getElementById('antwort').value;
+            const kategorie = document.getElementById('kategorie').value;
+
+            if (!frage || !antwort || !kategorie) {
+                alert("Bitte füllen Sie alle Felder aus.");
+                return;
+            }
+
+            addEinträge({
+                Frage: frage,
+                Antwort: antwort,
+                Kategorie: kategorie,
+                Erstellungsdatum: new Date()
+            });
+
+            document.getElementById('frage').value = '';
+            document.getElementById('antwort').value = '';
+            document.getElementById('kategorie').value = '';
+        });
+    }
+};
+
+    function displayData(data) {
+        data.forEach(function(item) {
+            const eintragBox = document.createElement('div');
+            eintragBox.className = 'eintrag-box';
+
+            const kategorie = document.createElement('p');
+            kategorie.className = 'kategorie';
+            kategorie.textContent = 'Kategorie: ' + item.Kategorie;
+            eintragBox.appendChild(kategorie);
+
+            const frage = document.createElement('p');
+            frage.className = 'frage';
+            frage.textContent = 'Frage: ' + item.Frage;
+            eintragBox.appendChild(frage);
+
+            const antwort = document.createElement('p');
+            antwort.className = 'antwort';
+            antwort.textContent = 'Antwort: ' + item.Antwort;
+            eintragBox.appendChild(antwort);
+
+            document.body.appendChild(eintragBox);
+        });
+    }
+
+
 
