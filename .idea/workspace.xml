@@ -7,19 +7,17 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38433fbe-f13a-465e-a0c7-6efa4ba616b9" name="Changes" comment="- Datenbank neu überarbeitet, damit diese soweit erstmal funktioniert.">
-      <change afterPath="$PROJECT_DIR$/src/Backup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NeuerEintrag.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/neuerEintragDesign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="38433fbe-f13a-465e-a0c7-6efa4ba616b9" name="Changes" comment="- Datenbank funktionen abgeändert und überarbeitet&#10;- Neue Seiten erstellt&#10;- Einträge können jetzt hinzugefügt werden&#10;-  service worker etwas überarbeitet und gefixt">
+      <change afterPath="$PROJECT_DIR$/backup.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BackupDesign.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Backup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainPageDesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPageDesign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NavigationBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/NavigationBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NeuerEintrag.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/NeuerEintrag.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/192.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/512.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/service-worker.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,9 +30,10 @@
       <list>
         <option value="package.json" />
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="Rust File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -85,6 +84,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;language.rust.cargo.check&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -173,6 +173,15 @@
       <workItem from="1719506800573" duration="1212000" />
       <workItem from="1719560405722" duration="4903000" />
       <workItem from="1719700581915" duration="73000" />
+      <workItem from="1719728108345" duration="1242000" />
+      <workItem from="1719729395733" duration="249000" />
+      <workItem from="1719729658173" duration="3596000" />
+      <workItem from="1719739660412" duration="2221000" />
+      <workItem from="1719742299037" duration="2794000" />
+      <workItem from="1719767495503" duration="1061000" />
+      <workItem from="1719904740887" duration="631000" />
+      <workItem from="1719905408603" duration="18000" />
+      <workItem from="1719905439276" duration="5376000" />
     </task>
     <task id="LOCAL-00001" summary="Added Main Page">
       <option name="closed" value="true" />
@@ -222,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717320797081</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="- Datenbank funktionen abgeändert und überarbeitet&#10;- Neue Seiten erstellt&#10;- Einträge können jetzt hinzugefügt werden&#10;-  service worker etwas überarbeitet und gefixt">
+      <option name="closed" value="true" />
+      <created>1719728402872</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719728402872</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +253,8 @@
     <MESSAGE value="- Added a SQL Database and created a base table&#10;- Added a README.txt file and put in some requirements" />
     <MESSAGE value="- Ive given up on the SQL Database&#10;- Started implementing a IndexDB Database&#10;- Some other minor tweaks" />
     <MESSAGE value="- Datenbank neu überarbeitet, damit diese soweit erstmal funktioniert." />
-    <option name="LAST_COMMIT_MESSAGE" value="- Datenbank neu überarbeitet, damit diese soweit erstmal funktioniert." />
+    <MESSAGE value="- Datenbank funktionen abgeändert und überarbeitet&#10;- Neue Seiten erstellt&#10;- Einträge können jetzt hinzugefügt werden&#10;-  service worker etwas überarbeitet und gefixt" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Datenbank funktionen abgeändert und überarbeitet&#10;- Neue Seiten erstellt&#10;- Einträge können jetzt hinzugefügt werden&#10;-  service worker etwas überarbeitet und gefixt" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

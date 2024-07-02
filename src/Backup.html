@@ -5,6 +5,9 @@
     <title>Backup</title>
     <link rel="stylesheet" href="NavigationBar.css">
     <link rel="manifest" href="manifest.json">
+    <script src="database.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <script src="service-worker.js"></script>
 </head>
 <body>
 
@@ -15,6 +18,21 @@
     </div>
     <li class="right"><a href="NeuerEintrag.html">Neu</a></li>
 </ul>
+
+<button id="backupButton">Backup IndexedDB Data</button>
+
+<script>
+    document.getElementById('backupButton').addEventListener('click', function() {
+        exportIndexedDBData().then(() => {
+            console.log('Data sent to backup server');
+        }).catch((error) => {
+            console.error('Error sending data to backup server:', error);
+        });
+    });
+</script>
+
+
+
 
 </body>
 </html>

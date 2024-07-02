@@ -42,7 +42,12 @@ request.onsuccess = function(event) {
 
     getEinträge(function(data) {
         console.log("Abgerufene Daten:", data);
-        displayData(data);
+        if (window.location.href.indexOf('MainPage.html') > -1) {
+            getEinträge(function(data) {
+                console.log("Abgerufene Daten:", data);
+                displayData(data);
+            });
+        }
     });
 };
 
@@ -138,6 +143,45 @@ window.onload = function() {
             document.body.appendChild(eintragBox);
         });
     }
+
+
+
+async function exportIndexedDBData() {
+    const dbName = "ForumDatabase";
+    const dbVersion = 1;
+    const storeName = "Einträge";
+
+    const request = indexedDB.open(dbName, dbVersion);
+
+    request.onsuccess = (event) => {
+        const db = event.target.result;
+        const transaction = db.transaction(storeName, "readonly");
+        const store = transaction.objectStore(storeName);
+        const getAllRequest = store.getAll();
+
+
+        getAllRequest.onsuccess = async () => {
+            const data = getAllRequest.result;
+            await fetch('http://127.0.0.1:8000/backup', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+        };
+
+        console.log("Data exported successfully.")
+        getAllRequest.onerror = (event) => {
+            console.error("Fehler beim Abrufen der Daten: ", event.target.error);
+        };
+    };
+
+    request.onerror = (event) => {
+        console.error("IndexedDB Fehler: ", event.target.error);
+    };
+}
 
 
 
