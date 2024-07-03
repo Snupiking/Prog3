@@ -8,6 +8,7 @@
     <script src="database.js"></script>
     <link rel="manifest" href="/manifest.json">
     <script src="service-worker.js"></script>
+    <link rel="stylesheet" href="BackupDesign.css">
 </head>
 <body>
 
@@ -19,8 +20,10 @@
     <li class="right"><a href="NeuerEintrag.html">Neu</a></li>
 </ul>
 
-<button id="backupButton">Backup IndexedDB Data</button>
-
+<div class="button-container">
+    <button id="backupButton">Backup IndexedDB Data</button>
+    <button onclick="fetchAndReplaceData()">Backup-Daten laden und anzeigen</button>
+</div>
 <script>
     document.getElementById('backupButton').addEventListener('click', function() {
         exportIndexedDBData().then(() => {
@@ -30,6 +33,8 @@
         });
     });
 </script>
+
+
 
 
 

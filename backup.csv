@@ -1,7 +1,4 @@
-Frage,Antwort,Kategorie,Erstellungsdatum
-Wie kann ich eine Datenbank erstellen?,"Du kannst eine Datenbank erstellen, indem du eine neue Datenbank erstellst",Datenbank,2021-06-01
-Wie kann ich eine Tabelle erstellen?,"Du kannst eine Tabelle erstellen, indem du eine neue Tabelle erstellst",Tabelle,2021-06-02
-Wie kann ich eine Zeile hinzufügen?,"Du kannst eine Zeile hinzufügen, indem du eine neue Zeile hinzufügst",Zeile,2021-06-03
-adfsgasdf,asdfasdfasdf,asdfasdf,2024-06-30T10:10:19.094Z
-asdfasdfas,dfasdfasdfasd,fasdfasdf,2024-06-30T10:10:23.226Z
-zo,5634563,4563456,2024-07-02T07:58:52.788Z
+id,Frage,Antwort,Kategorie,Erstellungsdatum
+15,Wie kann ich eine Datenbank erstellen?,"Du kannst eine Datenbank erstellen, indem du eine neue Datenbank erstellst",Datenbank,2021-06-01
+16,Wie kann ich eine Tabelle erstellen?,"Du kannst eine Tabelle erstellen, indem du eine neue Tabelle erstellst",Tabelle,2021-06-02
+ 

@@ -7,18 +7,13 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38433fbe-f13a-465e-a0c7-6efa4ba616b9" name="Changes" comment="- Datenbank funktionen abgeändert und überarbeitet&#10;- Neue Seiten erstellt&#10;- Einträge können jetzt hinzugefügt werden&#10;-  service worker etwas überarbeitet und gefixt">
-      <change afterPath="$PROJECT_DIR$/backup.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BackupDesign.css" afterDir="false" />
+    <list default="true" id="38433fbe-f13a-465e-a0c7-6efa4ba616b9" name="Changes" comment="- GEFIXT: Die datenbank wurde auf allen seiten angezeigt&#10;- Agefangen: Soweit wie möglich den Rust Backup Server aufgebaut. Kann nur noch nicht wieder aufgebaut werden&#10;-">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup.csv" beforeDir="false" afterPath="$PROJECT_DIR$/backup.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Backup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NeuerEintrag.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/NeuerEintrag.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BackupDesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackupDesign.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/service-worker.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,6 +177,8 @@
       <workItem from="1719904740887" duration="631000" />
       <workItem from="1719905408603" duration="18000" />
       <workItem from="1719905439276" duration="5376000" />
+      <workItem from="1719948872291" duration="4178000" />
+      <workItem from="1719993887166" duration="19000" />
     </task>
     <task id="LOCAL-00001" summary="Added Main Page">
       <option name="closed" value="true" />
@@ -239,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719728402872</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="- GEFIXT: Die datenbank wurde auf allen seiten angezeigt&#10;- Agefangen: Soweit wie möglich den Rust Backup Server aufgebaut. Kann nur noch nicht wieder aufgebaut werden&#10;-">
+      <option name="closed" value="true" />
+      <created>1719949192899</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1719949192899</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +259,8 @@
     <MESSAGE value="- Ive given up on the SQL Database&#10;- Started implementing a IndexDB Database&#10;- Some other minor tweaks" />
     <MESSAGE value="- Datenbank neu überarbeitet, damit diese soweit erstmal funktioniert." />
     <MESSAGE value="- Datenbank funktionen abgeändert und überarbeitet&#10;- Neue Seiten erstellt&#10;- Einträge können jetzt hinzugefügt werden&#10;-  service worker etwas überarbeitet und gefixt" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Datenbank funktionen abgeändert und überarbeitet&#10;- Neue Seiten erstellt&#10;- Einträge können jetzt hinzugefügt werden&#10;-  service worker etwas überarbeitet und gefixt" />
+    <MESSAGE value="- GEFIXT: Die datenbank wurde auf allen seiten angezeigt&#10;- Agefangen: Soweit wie möglich den Rust Backup Server aufgebaut. Kann nur noch nicht wieder aufgebaut werden&#10;-" />
+    <option name="LAST_COMMIT_MESSAGE" value="- GEFIXT: Die datenbank wurde auf allen seiten angezeigt&#10;- Agefangen: Soweit wie möglich den Rust Backup Server aufgebaut. Kann nur noch nicht wieder aufgebaut werden&#10;-" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

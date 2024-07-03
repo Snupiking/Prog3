@@ -1,0 +1,38 @@
+.button-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Grundstil für Buttons */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF; /* Blau */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 10px; /* Abstand zwischen den Buttons */
+}
+
+/* Hover-Effekt */
+button:hover {
+    background-color: #0056b3; /* Dunkleres Blau */
+    transform: scale(1.05);
+}
+
+/* Fokus-Stil */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.5);
+}
+
+/* Aktiver Button-Stil */
+button:active {
+    background-color: #004085; /* Noch dunkleres Blau */
+    transform: scale(0.98);
+}
