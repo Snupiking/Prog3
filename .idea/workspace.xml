@@ -7,13 +7,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38433fbe-f13a-465e-a0c7-6efa4ba616b9" name="Changes" comment="- GEFIXT: Die datenbank wurde auf allen seiten angezeigt&#10;- Agefangen: Soweit wie möglich den Rust Backup Server aufgebaut. Kann nur noch nicht wieder aufgebaut werden&#10;-">
+    <list default="true" id="38433fbe-f13a-465e-a0c7-6efa4ba616b9" name="Changes" comment="- Backups können jetzt auch aufgerufen und eingefügt werden&#10;- Design von der Backup.html fertiggestellt">
+      <change afterPath="$PROJECT_DIR$/Spezifikation.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backup.csv" beforeDir="false" afterPath="$PROJECT_DIR$/backup.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Backup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BackupDesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackupDesign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,6 +176,8 @@
       <workItem from="1719905439276" duration="5376000" />
       <workItem from="1719948872291" duration="4178000" />
       <workItem from="1719993887166" duration="19000" />
+      <workItem from="1719993917094" duration="678000" />
+      <workItem from="1720093896078" duration="604000" />
     </task>
     <task id="LOCAL-00001" summary="Added Main Page">
       <option name="closed" value="true" />
@@ -244,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719949192899</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="- Backups können jetzt auch aufgerufen und eingefügt werden&#10;- Design von der Backup.html fertiggestellt">
+      <option name="closed" value="true" />
+      <created>1719994097314</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719994097314</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +267,8 @@
     <MESSAGE value="- Datenbank neu überarbeitet, damit diese soweit erstmal funktioniert." />
     <MESSAGE value="- Datenbank funktionen abgeändert und überarbeitet&#10;- Neue Seiten erstellt&#10;- Einträge können jetzt hinzugefügt werden&#10;-  service worker etwas überarbeitet und gefixt" />
     <MESSAGE value="- GEFIXT: Die datenbank wurde auf allen seiten angezeigt&#10;- Agefangen: Soweit wie möglich den Rust Backup Server aufgebaut. Kann nur noch nicht wieder aufgebaut werden&#10;-" />
-    <option name="LAST_COMMIT_MESSAGE" value="- GEFIXT: Die datenbank wurde auf allen seiten angezeigt&#10;- Agefangen: Soweit wie möglich den Rust Backup Server aufgebaut. Kann nur noch nicht wieder aufgebaut werden&#10;-" />
+    <MESSAGE value="- Backups können jetzt auch aufgerufen und eingefügt werden&#10;- Design von der Backup.html fertiggestellt" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Backups können jetzt auch aufgerufen und eingefügt werden&#10;- Design von der Backup.html fertiggestellt" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
