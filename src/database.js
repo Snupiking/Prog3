@@ -19,7 +19,7 @@ request.onupgradeneeded = function(event) {
     db = event.target.result;
     const transaction = event.target.transaction;
 
-    const eintrag = db.createObjectStore("Einträge", { keyPath: "id", autoIncrement: tue });
+    const eintrag = db.createObjectStore("Einträge", { keyPath: "id", autoIncrement: true});
     eintrag.createIndex("Frage", "Frage", { unique: false });
     eintrag.createIndex("Antwort", "Antwort", { unique: false });
     eintrag.createIndex("Kategorie", "Kategorie", { unique: false });
