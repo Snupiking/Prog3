@@ -7,16 +7,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38433fbe-f13a-465e-a0c7-6efa4ba616b9" name="Changes" comment="- Backups können jetzt auch aufgerufen und eingefügt werden&#10;- Design von der Backup.html fertiggestellt">
-      <change afterPath="$PROJECT_DIR$/src/darkmode.js" afterDir="false" />
+    <list default="true" id="38433fbe-f13a-465e-a0c7-6efa4ba616b9" name="Changes" comment="- Darkmode feature eingebaut">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backup.csv" beforeDir="false" afterPath="$PROJECT_DIR$/backup.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Backup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Backup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainPageDesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainPageDesign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NavigationBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/NavigationBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NeuerEintrag.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/NeuerEintrag.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719994097314</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="- Darkmode feature eingebaut">
+      <option name="closed" value="true" />
+      <created>1720120116080</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1720120116080</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +275,8 @@
     <MESSAGE value="- Datenbank funktionen abgeändert und überarbeitet&#10;- Neue Seiten erstellt&#10;- Einträge können jetzt hinzugefügt werden&#10;-  service worker etwas überarbeitet und gefixt" />
     <MESSAGE value="- GEFIXT: Die datenbank wurde auf allen seiten angezeigt&#10;- Agefangen: Soweit wie möglich den Rust Backup Server aufgebaut. Kann nur noch nicht wieder aufgebaut werden&#10;-" />
     <MESSAGE value="- Backups können jetzt auch aufgerufen und eingefügt werden&#10;- Design von der Backup.html fertiggestellt" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Backups können jetzt auch aufgerufen und eingefügt werden&#10;- Design von der Backup.html fertiggestellt" />
+    <MESSAGE value="- Darkmode feature eingebaut" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Darkmode feature eingebaut" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -141,8 +141,31 @@ function displayData(data) {
         antwort.textContent = 'Antwort: ' + item.Antwort;
         eintragBox.appendChild(antwort);
 
+        const loeschButton = document.createElement('button');
+        loeschButton.textContent = 'Löschen';
+        loeschButton.addEventListener('click', function() {
+            loescheEintrag(item.id);
+        });
+        eintragBox.appendChild(loeschButton);
+
         document.body.appendChild(eintragBox);
     });
+}
+
+function loescheEintrag(id) {
+    const transaction = db.transaction(["Einträge"], "readwrite");
+    const objectStore = transaction.objectStore("Einträge");
+    const request = objectStore.delete(id);
+
+    request.onsuccess = function(event) {
+        console.log('Eintrag mit ID', id, 'wurde gelöscht.');
+        // Die Seite neu laden oder die Anzeige aktualisieren, um den gelöschten Eintrag zu entfernen
+        window.location.reload();
+    };
+
+    request.onerror = function(event) {
+        console.error('Fehler beim Löschen des Eintrags:', event.target.errorCode);
+    };
 }
 
 
