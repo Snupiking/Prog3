@@ -1,7 +1,18 @@
+:root {
+    --background-color: white;
+    --text-color: black;
+    --navbar-background: midnightblue;
+    --navbar-text-color: white;
+    --navbar-hover-background: white;
+    --navbar-hover-text-color: black;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .navbar {
@@ -13,7 +24,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: midnightblue;
+    background-color: var(--navbar-background);
 }
 
 .navbar .centered-links {
@@ -27,28 +38,41 @@ body {
     float: left;
 }
 
-.navbar li a {
-
+.navbar li a,
+.navbar li button {
     display: block;
-    color: white;
+    color: var(--navbar-text-color);
     margin: 0;
     padding: 14px 16px;
     text-align: center;
     text-decoration: none;
     transition: background-color 0.5s ease;
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
 }
-
 
 .navbar li.right {
     margin-left: auto;
-    color: midnightblue;
-
 }
+
 .navbar li.right a {
-    color: midnightblue;
+    color: var(--navbar-background);
 }
 
-.navbar li a:hover {
-    background-color: white;
-    color:black;
+.navbar li a:hover,
+.navbar li button:hover {
+    background-color: var(--navbar-hover-background);
+    color: var(--navbar-hover-text-color);
 }
+
+body.dark-mode {
+    --background-color: #1a1a1a;
+    --text-color: white;
+    --navbar-background: black;
+    --navbar-text-color: white;
+    --navbar-hover-background: darkgray;
+    --navbar-hover-text-color: white;
+}
+
