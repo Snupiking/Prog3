@@ -141,6 +141,11 @@ function displayData(data) {
         antwort.textContent = 'Antwort: ' + item.Antwort;
         eintragBox.appendChild(antwort);
 
+        const erstellungsdatum = document.createElement('p');
+        erstellungsdatum.className = 'erstellungsdatum';
+        erstellungsdatum.textContent = 'Erstellungsdatum: ' + item.Erstellungsdatum;
+        eintragBox.appendChild(erstellungsdatum);
+
         const loeschButton = document.createElement('button');
         loeschButton.textContent = 'Löschen';
         loeschButton.addEventListener('click', function() {
